@@ -1,3 +1,5 @@
+#pragma once
+
 #ifdef ESP32
 
 class EspClass32
@@ -25,7 +27,7 @@ class EspClass32
     }
 };
 
-EspClass32 ESP32Compat;
+extern EspClass32 ESP32Compat;
 
 #define ESP ESP32Compat
 #define ETS_UART_INTR_DISABLE()

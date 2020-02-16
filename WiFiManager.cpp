@@ -11,7 +11,9 @@
  **************************************************************/
 
 #include "WiFiManager.h"
-#include "Esp32Compat.h"
+#ifdef ESP32
+EspClass32 ESP32Compat;
+#endif
 
 WiFiManagerParameter::WiFiManagerParameter(const char *custom) {
   _id = NULL;

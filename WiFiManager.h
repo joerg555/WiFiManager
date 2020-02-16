@@ -43,6 +43,7 @@ inline void wifi_station_disconnect()
 
 #define ENC_TYPE_NONE WIFI_AUTH_OPEN
 
+#include "Esp32Compat.h"
 #endif
 #include <DNSServer.h>
 #include <memory>
