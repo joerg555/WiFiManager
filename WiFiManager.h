@@ -19,8 +19,8 @@
 #else
 #include <WiFi.h>
 #include <WebServer.h>
-
-//#include "esp_wps.h"
+#include <esp_wifi.h>
+//#include <esp_wps.h>
 
 class ESP8266WebServer : public WebServer
 {
@@ -52,8 +52,6 @@ inline void wifi_station_disconnect()
 extern "C" {
   #include "user_interface.h"
 }
-#else
-#include <esp_wifi.h>
 #endif
 
 const char HTTP_HEADER[] PROGMEM          = "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no\"/><title>{v}</title>";
