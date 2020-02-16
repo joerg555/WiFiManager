@@ -11,6 +11,7 @@
  **************************************************************/
 
 #include "WiFiManager.h"
+#include "Esp32Compat.h"
 
 WiFiManagerParameter::WiFiManagerParameter(const char *custom) {
   _id = NULL;
@@ -372,9 +373,12 @@ uint8_t WiFiManager::waitForConnectResult() {
 }
 
 void WiFiManager::startWPS() {
+// not ported
+#ifdef ESP8266
   DEBUG_WM(F("START WPS"));
   WiFi.beginWPSConfig();
   DEBUG_WM(F("END WPS"));
+#endif
 }
 /*
   String WiFiManager::getSSID() {
