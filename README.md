@@ -1,7 +1,9 @@
 ## Current development going on here :arrow_right: [Development Branch](https://github.com/tzapu/WiFiManager/tree/development)
 
 # WiFiManager
-ESP8266 WiFi Connection manager with fallback web configuration portal
+ESP8266 and ESP32 WiFi Connection manager with fallback web configuration portal
+
+[ESP32 instructions](README-ESP32.md)
 
 [![Build Status](https://travis-ci.org/tzapu/WiFiManager.svg?branch=master)](https://travis-ci.org/tzapu/WiFiManager)
 
